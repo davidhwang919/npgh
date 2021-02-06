@@ -1,0 +1,16 @@
+{% extends 'main/base.htm' %}
+
+{% block content %}
+
+
+{{ blog.title }}
+
+--{{ blog.date|date:'F jS Y'}}--
+
+
+{{ blog.description|safe }}
+
+
+{% endblock %}
+
+
