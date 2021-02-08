@@ -106,9 +106,9 @@
 
 .a {
     position: absolute;
-    top:80%;
+    top:50%;
     left:50%;
-    transform: translate(-50%, 870%);
+    transform: translate(-50%, 1000%);
     width: 200px;
     height: 120px;
     text-align:center;
