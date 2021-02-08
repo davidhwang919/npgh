@@ -72,7 +72,36 @@
     background-color: rgb(52, 176, 248);
     color: black;
     height: 300px;
+}
 
+.navbar {
+    background-color: black !important;
+}
+
+.navbar .navbar-brand {
+    color: white;
+}
+
+.navbar .navbar-brand:hover {
+    color: white
+}
+
+.navbar .navbar-nav li a {
+    color: white !important;
+}
+
+.navbar .nav-item .dropdown-menu .dropdown-item {
+    color: white !important;
+}
+
+.navbar .nav-item .dropdown-menu .dropdown-item:hover {
+    color: white !important;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.navbar-toggler {
+    background-color: white;
 }
 @media only screen and (min-width:768px) {
     .img-banner {

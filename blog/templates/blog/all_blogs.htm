@@ -1,15 +1,31 @@
-{% extends 'main/base.htm' %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Updates </title>
+    </head>
+    <body style="background: url(https://image.freepik.com/free-photo/abstract-grunge-decorative-relief-navy-blue-stucco-wall-texture-wide-angle-rough-colored-background_1258-28311.jpg); background-size: 100% 100%;";>
+        <div style="background-color:rgb(41, 191, 250);">
+            {% extends 'main/base.htm' %}
 
-{% block content %}
+            {% block content %}
 
 
-<p style="font-size: 50px;"> The Number of Updates {{ blogs.count }} blog{{ blogs.count|pluralize }} </p>
-{% for blog in blogs %}
+            <p style="font-size: 50px;"> The Number of Updates {{ blogs.count }} blog{{ blogs.count|pluralize }} </p>
+            {% for blog in blogs %}
 
-<a href="{% url 'blog:detail' blog.id %}"><h2> {{ blog.title }} </h2></a>
-<h5> {{ blog.date|date:'M d Y'|upper }}</h5>
-{{ blog.description|safe|truncatechars:100 }}
+            <a href="{% url 'blog:detail' blog.id %}"><h2> {{ blog.title }} </h2></a>
+            <h5> {{ blog.date|date:'M d Y'|upper }}</h5>
+            {{ blog.description|safe|truncatechars:100 }}
 
-{% endfor %}
+            {% endfor %}
 
-{% endblock %}
+            {% endblock %}
+
+
+        </div>
+        
+        
+    </body>
+    
+</html>
+
