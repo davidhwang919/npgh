@@ -245,6 +245,6 @@
     font-size: 90px; text-align: center; border: 6px solid rgb(255, 255, 255); height:300px;
 }
     .a {
-        transform: translate(-50%, 870%);
+        transform: translate(-50%, 800px);
     }
 }
