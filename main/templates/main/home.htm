@@ -1,59 +1,206 @@
-{% extends 'main/base.htm' %}
-
 {% block content %}
-
-<!DOCTYPE html>
 
 {% load static %}
 
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title> NPGH Website</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="{% static 'main/style.css' %}">
+    </head>
+    <body>
+        <header>
+            <a href="{% url 'home' %}" class="logo">NPGH Website</a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="menu">
+                <li><a href="{% url 'home' %}" onclick="toggleMenu();">Home</a></li>
+                <li><a href="{% url 'blog:all_blogs' %}" onclick="toggleMenu();">Recent updates</a></li>
+                <li><a href="{% url 'about' %}" onclick="toggleMenu();">About Us</a></li>
+                <li><a href="https://www.youtube.com/channel/UCd70YUXSJe7FZ3O2mRTFxcg" onclick="toggleMenu();">YouTube</a></li>
+                <li><a href="https://www.gofundme.com/f/no-person-gone-hungry?utm_campaign=p_cp+share-sheet&utm_medium=copy_link_all&utm_source=customer" onclick="toggleMenu();">GoFundMe</a></li>
+                <li><a href="#contact" onclick="toggleMenu();">Contact Us!</a></li>
+            </ul>
+        </header>
+        <section class="banner" id="home">
+            <div class="textBx">
+                <h2>No Person Gone Hungry</h2>
+                <h3> Website designed to help stop the spread of hunger. </h3>
+                <a href="{% url 'help' %}" class="btn"> Click here to find out how you can help</a>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="heading">
+                <h2> About Us</h2>
+            </div>
+            <div class="content">
+                <div class="contentBx w50">
+                    <h3> We are an organization focusing to stop the spread of hunger. </h3>
+                    <p>  Partners = West Suburban Community Pantry <br><br> Address:  6809 Hobson Valley Dr Ste 118, Woodridge, IL 60517 <br><br> Who are we?  We are an organization dedicated combating hunger in our local area through community engagement.  We realize that several families are struggling  during the COVID-19 pandemic, and want to do everything we can to make sure that the people in and around our  area don't go hungry. - Vineet <br><br> We were founded because we realized that so many people around us were losing their jobs and we wanted to give back to our community. We understand that this is a difficult time for so many. 
+                        In order to fulfill our purpose, we host food drives and fundraisers. We partner up with local food banks to help distribute food to people who are in need. All while prioritizing safety and following guidelines during the pandemic. Along with our projects, we work to raise awareness about the issue of hunger in our community, events, and media. We also raise awareness about hunger and inform our local community about these issues and what we can do to help. -Serene </p>
+                </div>
+                <div class="w50">
+                    <img class="img-me" src="{% static 'main/food.jpg' %}">
+                </div>
+            </div>
+        </section>
+        <section class="services" id="services">
+            <div class="heading white">
+                <h2>More Details</h2>
+                <p>No Person Gone Hungry</p>
+            </div>
+            <div class="content">
+                <div class="servicesBx">
+                    <img class="img-me" src="{% static 'main/hands.jpg' %}">
+                    <h2> Home</h2>
+                    <p>We are currently accepting donations for the West Suburban Food Bank to purchase food and create PPE bags for recipients and the food bank. Our first goal is to raise $5000 in order to purchase food and create PPE bags (each containing a face mask, pair of gloves, and sanitizing wipes) to donate to the food banks. NPGH respectfully requests a donation of $10-$100 to help support our $1000 goal. Anything you can contribute would be much appreciated.</p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="servicesBx">
+                    <img class="img-me" src="{% static 'main/go.jpg' %}">
+                    <a href=https://www.gofundme.com/f/no-person-gone-hungry?utm_campaign=p_cp+share-sheet&utm_medium=copy_link_all&utm_source=customer"> Click here to support the club! Thank you!</a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="servicesBx">
+                    <img class="img-me" src="{% static 'main/arjun.jpg' %}">
+                    <h2> Arjun Paladugula</h2>
+                    <p>Original Founder of NPGH Club. A nice person</p>
+                </div>
+                <div class="servicesBx">
+                    <img class="img-me" src="{% static 'main/serene.jpg' %}">
+                    <h2> Serene Bose</h2>
+                    <p>Co-Founder of NPGH Club. Social Media spreader. Project organizer</p>
+                </div>
+                <div class="servicesBx">
+                    <img class="img-me" src="{% static 'main/hands.jpg' %}">
+                    <h2> Vineet Sista</h2>
+                    <p>Co-Founder of NPGH Club. Project Organizer. Helps spread word through district. </p>
+                </div>
+                <div class="servicesBx">
+                    <img class="img-me" src="{% static 'main/david.jpg' %}">
+                    <h2> David Hwang</h2>
+                    <p>Co-Founder and Website producer/programmer. Helps spread word through media.</p>
+                </div>
+                
+            </div>
+        </section>
 
-<html>
-<head>
-    <title>NPGH Website</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="{% static 'main/style.css' %}">
-    <style>
-        body {
-            margin: 0px;
-        }
-        .pad {
-            padding: 25px;
-        }
-    
-       
-        
-        
-    </style>
-    
-</head>
- <body style="background: url(https://image.freepik.com/free-photo/space-nebula-3d-illustration-use-with-projects-science-research-education_250994-2401.jpg); background-size: 100% 100%;";>
-     <div class="header pad img-banner">
-         <div style="font-size: 100px; text-align: center; border: 6px solid rgb(255, 255, 255); height:330px;">
-            <p>NPGH Website</p>
+        <section class="work">
+            <div class="heading">
+                <h2> our latest work</h2>
+                <p>Blog Page</p>
+            </div>
+            <div class="content">
+                <div class="workBx">
+                    <img class="img-me" src="{% static 'main/hands.jpg' %}">
+                </div>
+                <div class="workBx">
+                    <img class="img-me" src="{% static 'main/hands.jpg' %}">
+                </div>
+                <div class="workBx">
+                    <img class="img-me" src="{% static 'main/hands.jpg' %}">
+                </div>
+                <div class="workBx">
+                    <img class="img-me" src="{% static 'main/hands.jpg' %}">
+                </div>
+                <div class="heading">
+                    <a href="{% url 'blog:all_blogs' %}" class="btn">View More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonial">
+            <div class="heading">
+                <h2> GoFundMe</h2>
+                <p>Blog Page</p>
+            </div>
+            <div class="content">
+                <div class="testimonialBx">
+                    <p>One penny can make a difference</p>
+                    <h3>Someone <br><span>Creative Food</span></h3>
+                </div>
+                <div class="testimonialBx">
+                    <p>One penny can make a difference</p>
+                    <h3>Someone <br><span>Creative Food</span></h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="heading white">
+                <h2>Contact Us</h2>
+                <p>Contact information</p>
+            </div>
+            <div class="content">
+                <div class="contactInfo">
+                    <h3>Contact Info</h3>
+                    <div class="contactInfoBx">
+                        <div class="box">
+                            <div class="icon">
+                                <i class="fa fa-map-marker"></i>
+                            </div>
+                            <div class="text">
+                                <h3>Address</h3>
+                                <p>2323 Wellesley Ct. 60564</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="text">
+                                <h3>Phone Number</h3>
+                                <p>331-228-8300</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon">
+                                <i class="fa fa-envelope-o"></i>
+                            </div>
+                            <div class="text">
+                                <h3>Email</h3>
+                                <p>npgh@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="formBx">
+                    <form>
+                        <h3>Message Us</h3>
+                        <input type="text" name="" placeholder="Full Name">
+                        <input type="email" name="" placeholder="Email">
+                        <textarea placeholder="Your Message"></textarea>
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+                </div>
+        </section>
+
+        <div class="copyright">
+            <p> Hello! Thanks for visiting this website!</p>
         </div>
-     </div>
-     <div>
-         <p class="welcome">
-             No Person Gone Hungry
-         </p>
-     </div>
-    
-     </div>
-    
-     <div class="wrapper">
-         <article class="img-info">
-              <div class="pad">
-            <p style="background-color:rgb(95, 201, 243);font-size:15pt; border: 6px solid rgb(250, 211, 38);">
-                We are currently accepting donations for the West Suburban Food Bank to purchase food and create PPE bags for recipients and the food bank. Our first goal is to raise $5000 in order to purchase food and create PPE bags (each containing a face mask, pair of gloves, and sanitizing wipes) to donate to the food banks. NPGH respectfully requests a donation of $10-$100 to help support our $1000 goal. Anything you can contribute would be much appreciated. 
-            </p>
+        <script type="text/javascript">
+            window.addEventListener('scroll', function(){
+                var header = document.querySelector('header');
+                header.classList.toggle('sticky', window.scrollY > 0);
+            });
 
-         </article>
-     </div>
-     
+            function toggleMenu(){
+                var menuToggle = document.querySelector('.toggle');
+                var menu = document.querySelector('.menu');
+                menuToggle.classList.toggle('active');
+                menu.classList.toggle('active');
+            }
+        </script>
+    </body>
+</html>
 
-     <a class="a" href="https://www.gofundme.com/f/no-person-gone-hungry?utm_campaign=p_cp+share-sheet&utm_medium=copy_link_all&utm_source=customer">Please Help us by clicking this button!</a>
 
-     <br>
+
 
     {% for project in projects %}
 
@@ -66,12 +213,7 @@
     {% endif %}
     {% endfor %}
 
-    
 
-     
- </body>
-
-</html>
 
 
 {% endblock %}

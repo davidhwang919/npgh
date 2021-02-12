@@ -9,3 +9,7 @@ def home(request):
 
 def about(request):
     return render(request, 'main/about.htm')
+
+
+def help(request):
+    return render(request, 'main/help.htm')
