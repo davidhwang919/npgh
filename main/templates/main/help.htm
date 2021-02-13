@@ -1,1 +1,63 @@
-fff
+{% extends 'main/base.htm' %}
+
+{% block content %}
+
+<!DOCTYPE html>
+
+{% load static %}
+
+
+<html>
+<head>
+    <title>About Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'main/style.css' %}">
+    <style>
+        body {
+            margin: 0px;
+        }
+        .pad {
+            padding: 25px;
+        }
+    
+       
+        
+        
+    </style>
+    
+</head>
+ <body style="background:url(https://image.freepik.com/free-photo/colour-smoke-background_71163-197.jpg); background-size: 100% 100%;">
+     <div class="headera pad img-banner">
+         <div style="font-size: 100px; text-align: center; font-size: 100px; text-align: center; border: 6px solid rgb(255, 255, 255); height:250px; color: white;">
+            <p>Instructions!</p>
+        </div>
+     </div>
+     <div>
+         <p class="welcome">
+             No Person Gone Hungry
+         </p>
+     </div>
+    
+     </div>
+    
+     <div>
+         <article class="img-info">
+              <div class="pad">
+            <p style="background-color:rgb(10, 164, 90);font-size:15pt; text-align:center; color: white;">
+                Click the link below!!
+            </p>
+
+            <a class="a" href="https://www.gofundme.com/f/no-person-gone-hungry?utm_campaign=p_cp+share-sheet&utm_medium=copy_link_all&utm_source=customer">Please Help us by clicking this button!</a>
+
+         </article>
+     </div>
+
+     <br>
+     
+ </body>
+
+</html>
+
+
+{% endblock %}
