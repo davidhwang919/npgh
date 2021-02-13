@@ -1,63 +1,136 @@
-{% extends 'main/base.htm' %}
+<!DOCTYPE html>
 
 {% block content %}
 
-<!DOCTYPE html>
-
 {% load static %}
 
-
-<html>
-<head>
-    <title>About Us</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="{% static 'main/style.css' %}">
-    <style>
-        body {
-            margin: 0px;
-        }
-        .pad {
-            padding: 25px;
-        }
-    
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title> NPGH Website</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="{% static 'main/steal.css' %}">
+    </head>
+    <body>
+        <header>
+            <a href="{% url 'home' %}" class="logo">No Person Gone Hungry</a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="menu">
+                <li><a href="{% url 'home' %}" onclick="toggleMenu();">Home.</a></li>
+                <li><a href="{% url 'blog:all_blogs' %}">Recent updates</a></li>
+                <li><a href="{% url 'about' %}">About Us</a></li>
+                <li><a href="https://www.youtube.com/channel/UCd70YUXSJe7FZ3O2mRTFxcg" onclick="toggleMenu();">YouTube</a></li>
+                <li><a href="https://www.gofundme.com/f/no-person-gone-hungry?utm_campaign=p_cp+share-sheet&utm_medium=copy_link_all&utm_source=customer" onclick="toggleMenu();">GoFundMe</a></li>
+                <li><a href="#contact" onclick="toggleMenu();">Contact Us!</a></li>
+            </ul>
+        </header>
+        <section class="banner" id="home">
+            <div class="textBx">
+                <h2>Instructions Page</h2>
+                <h3> Website designed to help stop the spread of hunger. </h3>
+                <a href="{% url 'help' %}" class="btn"> Click here to find out how you can help</a>
+            </div>
+        </section>
+        <section class="services" id="services">
+            <div class="heading white">
+                <h2>More Details</h2>
+                <p>No Person Gone Hungry</p>
+            </div>
+            <div class="content">
+                <div class="servicesBx">
+                    <img class="img-me" src="{% static 'main/web.png' %}">
+                    <h2> Share THIS website</h2>
+                    <p>To help spread the word. Share this website as it provides the most information.</p>
+                </div>
+                <div class="servicesBx">
+                    <img class="img-me" src="{% static 'main/go.jpg' %}">
+                    <br><br>
+                    <h2>Support the Naperville/Aurora Area below! </h2>
+                    <br>
+                    <a href=https://www.gofundme.com/f/no-person-gone-hungry?utm_campaign=p_cp+share-sheet&utm_medium=copy_link_all&utm_source=customer">  Go Fund Me Link</a>
+                </div>
+                <div class="servicesBx">
+                    <img class="img-me" src="{% static 'main/finger.png' %}">
+                    <h2> If you live somewhere else, support your local area!</h2>
+                    <p>Bring awareness to your area! </p>
+                </div>
+                <div class="servicesBx">
+                    <img class="img-me" src="{% static 'main/mask.png' %}">
+                    <h2> Package Masks - Share Masks</h2>
+                    <p>Especially in this Covid-19 crisis. Nothing is more important than help!</p>
+                </div>
+                
+            </div>
+        </section>
        
-        
-        
-    </style>
-    
-</head>
- <body style="background-color:black; background-size: 100% 100%;">
-     <div class="headera pad img-banner">
-         <div style="font-size: 100px; text-align: center; font-size: 100px; text-align: center; border: 6px solid rgb(255, 255, 255); height:250px; color: white;">
-            <p>Instructions!</p>
-        </div>
-     </div>
-     <div>
-         <p class="welcome">
-             No Person Gone Hungry
-         </p>
-     </div>
-    
-     </div>
-    
-     <div>
-         <article class="img-info">
-              <div class="pad">
-            <p style="background-color:rgb(10, 164, 90);font-size:15pt; text-align:center; color: white;">
-                Click the link below!!
-            </p>
 
-            <a class="a" href="https://www.gofundme.com/f/no-person-gone-hungry?utm_campaign=p_cp+share-sheet&utm_medium=copy_link_all&utm_source=customer">Please Help us by clicking this button!</a>
 
-         </article>
-     </div>
 
-     <br>
-     
- </body>
+        <section class="contact" id="contact">
+            <div class="heading white">
+                <h2>Contact Us</h2>
+                <p>Contact information</p>
+            </div>
+            <div class="content">
+                <div class="contactInfo">
+                    <h3>Contact Info</h3>
+                    <div class="contactInfoBx">
+                        <div class="box">
+                            <div class="icon">
+                                <i class="fa fa-map-marker"></i>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="text">
+                                <h3>Phone Number</h3>
+                                <p>331-228-8300</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon">
+                                <i class="fa fa-envelope-o"></i>
+                            </div>
+                            <div class="text">
+                                <h3>Email</h3>
+                                <p>npgh@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="formBx">
+                    <form>
+                        <h3>Message Us</h3>
+                        <input type="text" name="" placeholder="Full Name">
+                        <input type="email" name="" placeholder="Email">
+                        <textarea placeholder="Your Message"></textarea>
+                        <input type="submit" value="Send">
+                    </form>
+                </div>
+                </div>
+        </section>
 
+        <script type="text/javascript">
+            window.addEventListener('scroll', function(){
+                var header = document.querySelector('header');
+                header.classList.toggle('sticky', window.scrollY > 0);
+            });
+
+            function toggleMenu(){
+                var menuToggle = document.querySelector('.toggle');
+                var menu = document.querySelector('.menu');
+                menuToggle.classList.toggle('active');
+                menu.classList.toggle('active');
+            }
+        </script>
+    </body>
 </html>
+
+
+
 
 
 {% endblock %}
