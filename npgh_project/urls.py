@@ -26,6 +26,7 @@ urlpatterns = [
     path('about', views.about, name='about'),
     path('help', views.help, name='help'),
     path('extra', views.extra, name='extra'),
+    path('more', views.more, name='more'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

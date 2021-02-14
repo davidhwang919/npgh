@@ -16,3 +16,6 @@ def help(request):
 
 def extra(request):
     return render(request, 'main/extra.htm')
+
+def more(request):
+    return render(request, 'main/more.htm')
