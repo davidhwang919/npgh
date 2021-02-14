@@ -13,3 +13,6 @@ def about(request):
 
 def help(request):
     return render(request, 'main/help.htm')
+
+def extra(request):
+    return render(request, 'main/extra.htm')
