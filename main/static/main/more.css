@@ -128,12 +128,12 @@
     .contenter h2 {
     position: absolute;
     transform: translate(-100%, 340%);
-    font-size: 2em;
+    font-size: 0em;
     }
     .contented h2 {
         position: absolute;
         transform: translate(-100%, 440%);
-        font-size: 2em;
+        font-size: 0em;
     }
 }
 
@@ -178,8 +178,18 @@
     .contented h2 {
         font-size: 0em;
     }
-    .content h2 {
+    .contenter h2 {
         font-size: 0em;
     }
 
 }
+
+@media (max-height:562px) {
+    .contented h2 {
+        font-size: 0em;
+    }
+    .contenter h2 {
+        font-size: 0em;
+    }
+}
+
