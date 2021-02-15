@@ -19,3 +19,6 @@ def extra(request):
 
 def more(request):
     return render(request, 'main/more.htm')
+
+def d(request):
+    return render(request, 'main/d.htm')
