@@ -1,22 +1,27 @@
 {% extends 'main/base.htm' %}
-
+{% load static %}
 {% block content %}
+
 <!DOCTYPE html>
 <html>
-    <div style="text-align:center;">
+    <head>
+    </head>
+
+<body>
+    <div style="text-align: center; background-color:rgb(3, 52, 145); color: white; padding: 10px 30px; font-weight: 500; ">
         <h3>{{ blog.title }}</h3>
-        <br>
     
-    <p>--{{ blog.date|date:'F jS Y'}}--</p>
+        <p>--{{ blog.date|date:'F jS Y'}}--</p>
     
     
-    <p>{{ blog.description|safe }}</p>
+        <p>{{ blog.description|safe }}</p>
+    
     </div>
-    
-    
-    
     {% endblock %}
     
-    
-    
+</body>
+
 </html>
+
+
+
