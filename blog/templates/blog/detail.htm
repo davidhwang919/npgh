@@ -1,16 +1,22 @@
 {% extends 'main/base.htm' %}
 
 {% block content %}
-
-
-{{ blog.title }}
-
---{{ blog.date|date:'F jS Y'}}--
-
-
-{{ blog.description|safe }}
-
-
-{% endblock %}
-
-
+<!DOCTYPE html>
+<html>
+    <div style="text-align:center;">
+        <h3>{{ blog.title }}</h3>
+        <br>
+    
+    <p>--{{ blog.date|date:'F jS Y'}}--</p>
+    
+    
+    <p>{{ blog.description|safe }}</p>
+    </div>
+    
+    
+    
+    {% endblock %}
+    
+    
+    
+</html>
