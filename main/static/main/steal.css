@@ -39,9 +39,38 @@ section {
     font-weight: 500;
 }
 
+.banners {
+    position: relative;
+    min-height:100vh;
+    background: url(future.jpg);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banners h2 {
+    font-size:3em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.banners h2 span {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.banners h3 {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+}
+
 .btn {
     position: relative;
-    background: #f36421;
+    background: #09bf18;
     display: inline-block;
     color: #fff;
     margin-top: 20px;
