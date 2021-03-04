@@ -112,6 +112,14 @@ header.sticky ul li a {
     color: #111;
 }
 
+
+.headingr {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+}
+
 .heading 2 {
     font_weight:600;
     font-size: 30px;
@@ -137,7 +145,7 @@ img {
     max-width: 100%;
 }
 .services {
-    background: #111;
+    background: rgb(0, 40, 150);
 }
 
 .heading.white {
@@ -153,7 +161,7 @@ img {
 
 .services .content .servicesBx {
     padding: 40px 20px;
-    background: #222;
+    background: rgb(2, 143, 208);
     color: #fff;
     max-width: 340px;
     margin: 20px;
@@ -162,7 +170,7 @@ img {
 }
 
 .services .content .servicesBx:hover {
-    background: #2196f3;
+    background: #16bf11;
 }
 
 .services .content .servicesBx img {
@@ -191,6 +199,7 @@ img {
 .testimonial {
     background: #f7f7f7;
 }
+
 
 .testimonial .content {
     display: flex;
@@ -251,6 +260,75 @@ img {
 }
 
 .testimonial .content .testimonialBr h3 span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.testimonialr {
+    background: #000000;
+}
+
+
+.testimonialr .content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.testimonialr .content .testimonialBx {
+    max-width: calc(50% - 40px);
+    padding:60px 40px;
+    margin: 20px;
+    background: #2196f3;
+}
+
+.testimonialr .content .testimonialBx p {
+    color: #fff;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.testimonialr .content .testimonialBx h3 {
+    margin-top: 40px;
+    text-align: end;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1em;
+}
+
+.testimonialr .content .testimonialBx h3 span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.testimonialr .content .testimonialBr {
+    width: 100%;
+    padding:60px 40px;
+    margin: 20px;
+    background: #f3b121;
+}
+
+.testimonialr .content .testimonialBr p {
+    color: #fff;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.testimonialr .content .testimonialBr h3 {
+    margin-top: 40px;
+    text-align: end;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1em;
+}
+
+.testimonialr .content .testimonialBr h3 span {
     font-size: 14px;
     font-weight: 400;
 }

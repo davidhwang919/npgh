@@ -70,7 +70,7 @@ section {
 
 .btn {
     position: relative;
-    background: #09bf18;
+    background: #09b0bf;
     display: inline-block;
     color: #fff;
     margin-top: 20px;
@@ -166,7 +166,7 @@ img {
     max-width: 100%;
 }
 .services {
-    background: #17197b;
+    background: #111;
 }
 
 .heading.white {
@@ -182,7 +182,7 @@ img {
 
 .services .content .servicesBx {
     padding: 40px 20px;
-    background: rgb(82, 163, 255);
+    background: #222;
     color: #fff;
     max-width: 340px;
     margin: 20px;
@@ -191,7 +191,7 @@ img {
 }
 
 .services .content .servicesBx:hover {
-    background: #22b05d;
+    background: #2196f3;
 }
 
 .services .content .servicesBx img {
