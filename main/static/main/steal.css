@@ -13,7 +13,7 @@ section {
 .banner {
     position: relative;
     min-height:100vh;
-    background: url(sky.jpg);
+    background: url(galaxy.jpg);
     background-size: cover;
     background-position: right;
     display: flex;
@@ -39,38 +39,9 @@ section {
     font-weight: 500;
 }
 
-.banners {
-    position: relative;
-    min-height:100vh;
-    background: url(future.jpg);
-    background-size: cover;
-    background-position: right;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.banners h2 {
-    font-size:3em;
-    color: #fff;
-    font-weight: 500;
-    line-height: 1.5em;
-}
-
-.banners h2 span {
-    font-size: 1.5em;
-    font-weight: 700;
-}
-
-.banners h3 {
-    font-size: 1.5em;
-    color: #fff;
-    font-weight: 500;
-}
-
 .btn {
     position: relative;
-    background: #09b0bf;
+    background: #2196f3;
     display: inline-block;
     color: #fff;
     margin-top: 20px;
@@ -141,6 +112,14 @@ header.sticky ul li a {
     color: #111;
 }
 
+
+.headingr {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+}
+
 .heading 2 {
     font_weight:600;
     font-size: 30px;
@@ -166,7 +145,7 @@ img {
     max-width: 100%;
 }
 .services {
-    background: #111;
+    background: rgb(0, 40, 150);
 }
 
 .heading.white {
@@ -182,7 +161,7 @@ img {
 
 .services .content .servicesBx {
     padding: 40px 20px;
-    background: #222;
+    background: rgb(2, 143, 208);
     color: #fff;
     max-width: 340px;
     margin: 20px;
@@ -191,7 +170,7 @@ img {
 }
 
 .services .content .servicesBx:hover {
-    background: #2196f3;
+    background: #23c91d;
 }
 
 .services .content .servicesBx img {
@@ -220,6 +199,7 @@ img {
 .testimonial {
     background: #f7f7f7;
 }
+
 
 .testimonial .content {
     display: flex;
@@ -251,6 +231,104 @@ img {
 }
 
 .testimonial .content .testimonialBx h3 span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.testimonial .content .testimonialBr {
+    width: 100%;
+    padding:60px 40px;
+    margin: 20px;
+    background: #f3b121;
+}
+
+.testimonial .content .testimonialBr p {
+    color: #fff;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.testimonial .content .testimonialBr h3 {
+    margin-top: 40px;
+    text-align: end;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1em;
+}
+
+.testimonial .content .testimonialBr h3 span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.testimonialr {
+    background: #000000;
+}
+
+
+.testimonialr .content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.testimonialr .content .testimonialBx {
+    max-width: calc(50% - 40px);
+    padding:60px 40px;
+    margin: 20px;
+    background: #2196f3;
+}
+
+.testimonialr .content .testimonialBx p {
+    color: #fff;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.testimonialr .content .testimonialBx h3 {
+    margin-top: 40px;
+    text-align: end;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1em;
+}
+
+.testimonialr .content .testimonialBx h3 span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.testimonialr .content .testimonialBr {
+    width: 100%;
+    padding:60px 40px;
+    margin: 20px;
+    background: #f3b121;
+}
+
+.testimonialr .content .testimonialBr p {
+    color: #fff;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.testimonialr .content .testimonialBr h3 {
+    margin-top: 40px;
+    text-align: end;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1em;
+}
+
+.testimonialr .content .testimonialBr h3 span {
     font-size: 14px;
     font-weight: 400;
 }
@@ -350,6 +428,14 @@ img {
     color: #fff;
     text-align: center;
     padding: 10px;
+}
+
+.aa {
+    background-color: rgb(0, 119, 255);
+    color: white;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 
@@ -529,5 +615,14 @@ img {
     }
     section {
         padding: 100px 20px;
+    }
+}
+
+@media (max-width:1024px) {
+    .testimonial .content .testimonialBr {
+        width: 90%;
+        padding:60px 40px;
+        margin: 20px;
+        background: #f3b121;
     }
 }
