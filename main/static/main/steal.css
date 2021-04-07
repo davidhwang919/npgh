@@ -306,7 +306,7 @@ img {
 
 
 .testimonialr .content .testimonialBr {
-    width: 100%;
+    width: 90%;
     padding:60px 40px;
     margin: 20px;
     background: #f3b121;
@@ -496,6 +496,13 @@ img {
     animation: animate 8s linear infinite;
 }
 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
 /*Responsive*/
 @media (max-width:991px)
 {
@@ -626,3 +633,4 @@ img {
         background: #f3b121;
     }
 }
+

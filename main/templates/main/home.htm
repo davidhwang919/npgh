@@ -15,7 +15,13 @@
     </head>
     <body>
         <header>
-            <a href="{% url 'home' %}" class="logo">NPGH Website</a>
+            <a href="{% url 'home' %}">
+
+                <img class="logo" src="{% static 'main/logo.png' %}" width="60" height="40">
+            </a>
+            
+            <a href="{% url 'home' %}" class="logo">No Person Gone Hungry</a>
+           
             <div class="toggle" onclick="toggleMenu();"></div>
             <ul class="menu">
                 <li><a href="{% url 'home' %}" onclick="toggleMenu();">Home.</a></li>
@@ -24,13 +30,14 @@
                 <li><a href="https://www.gofundme.com/f/no-person-gone-hungry?utm_campaign=p_cp+share-sheet&utm_medium=copy_link_all&utm_source=customer" onclick="toggleMenu();">GoFundMe</a></li>
                 <li><a href="#contact" onclick="toggleMenu();">Contact Us!</a></li>
                 <li><a href="https://www.instagram.com/nopersongonehungry/" onclick="toggleMenu();">Instagram</a></li>
+                <li><a href="{% url 'help' %}">Upcoming Events</a></li>
             </ul>
         </header>
         <section class="banner" id="home">
             <div class="textBx">
                 <h2>No Person Gone Hungry</h2>
-                <h3> Website designed to help stop the spread of hunger. </h3>
-                <a href="{% url 'help' %}" class="btn"> Click here to find out how you can help</a>
+                <h3> Youth committed to ending hunger </h3>
+                <a href="{% url 'help' %}" class="btn"> Click here for upcoming events!</a>
             </div>
             <div class="contented">
             <h2>GoFundMe</h2>
