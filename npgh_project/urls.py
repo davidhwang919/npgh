@@ -28,6 +28,7 @@ urlpatterns = [
     path('extra', views.extra, name='extra'),
     path('more', views.more, name='more'),
     path('d', views.d, name='d'),
+    path('sign', views.sign, name='sign'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

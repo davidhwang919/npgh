@@ -22,3 +22,6 @@ def more(request):
 
 def d(request):
     return render(request, 'main/d.htm')
+
+def sign(request):
+    return render(request, 'main/sign.htm')
