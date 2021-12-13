@@ -18,8 +18,7 @@
             <a href="{% url 'home' %}" class="logo">No Person Gone Hungry</a>
             <div class="toggle" onclick="toggleMenu();"></div>
             <ul class="menu">
-                <li><a href="{% url 'home' %}" onclick="toggleMenu();">Home.</a></li>
-                <li><a href="{% url 'blog:all_blogs' %}">Recent updates</a></li>
+                <li><a href="{% url 'home' %}" onclick="toggleMenu();">Home</a></li>
                 <li><a href="{% url 'about' %}">About Us</a></li>
                 <li><a href="https://www.youtube.com/channel/UCd70YUXSJe7FZ3O2mRTFxcg" onclick="toggleMenu();">YouTube</a></li>
                 <li><a href="https://www.gofundme.com/f/no-person-gone-hungry?utm_campaign=p_cp+share-sheet&utm_medium=copy_link_all&utm_source=customer" onclick="toggleMenu();">GoFundMe</a></li>
@@ -45,8 +44,12 @@
         
         <section class="testimonialr">
             <div class="headingr">
-                <h2> image Below for food drive info!</h2>
-                <p></p>
+                <h2>Donation of $25 giftcards to families of Hesed House</h2>
+            </br>
+                <h2>Birthday Package donations to Loaves and Fishes</h2>
+            </br>
+                <h2>Teen volutarism at Loaves and Fishes</h2>
+                
             </div>
             <div>
                 <img class="img-me" src="{% static 'main/page.png' %}" width=100% height=100%>    
@@ -88,7 +91,6 @@
        
 
 
-
         <section class="contact" id="contact">
             <div class="heading white">
                 <h2>Contact Us</h2>
@@ -99,39 +101,22 @@
                     <h3>Contact Info</h3>
                     <div class="contactInfoBx">
                         <div class="box">
-                            <div class="icon">
-                                <i class="fa fa-map-marker"></i>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="icon">
-                                <i class="fa fa-phone"></i>
-                            </div>
                             <div class="text">
-                                <h3>Phone Number</h3>
-                                <p>331-228-8300</p>
+                                <h3>Address</h3>
+                                <p>2223 Stowe Circle Naperville Illinois 60564</p>
                             </div>
                         </div>
                         <div class="box">
-                            <div class="icon">
-                                <i class="fa fa-envelope-o"></i>
-                            </div>
                             <div class="text">
                                 <h3>Email</h3>
-                                <p>npghclub@gmail.com</p>
+                                <p>NPGHclub@gmail.com</p>
+                            </div>
+                            <div class="text">
+                                <h3>Instagram</h3>
+                                <p>@nopersongonehungry</p>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="formBx">
-                    <form>
-                        <h3>Message Us</h3>
-                        <input type="text" name="" placeholder="Full Name">
-                        <input type="email" name="" placeholder="Email">
-                        <textarea placeholder="Your Message"></textarea>
-                        <input type="submit" value="Send">
-                    </form>
-                </div>
                 </div>
         </section>
 
